@@ -24,7 +24,7 @@ export const Navbar = () => {
               Login
             </Link>
             <Link href="/register" className="hover:underline">
-              Register
+              Sign Up
             </Link>
           </>
         ) : (
