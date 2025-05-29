@@ -38,7 +38,7 @@ export default function RegisterPage() {
 
   return (
     <div className="max-w-md mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Register</h1>
+      <h1 className="text-2xl font-bold mb-4">Sign Up</h1>
       {error && <div className="text-red-500 mb-2">{error}</div>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
@@ -79,7 +79,7 @@ export default function RegisterPage() {
           type="submit"
           className="bg-green-600 text-white px-4 py-2 rounded"
         >
-          Register
+          Sign Up
         </button>
       </form>
     </div>
