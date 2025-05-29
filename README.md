@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Job Finder App
 
-## Getting Started
+This project is a simple application for job searching, profile creation, and user authentication. It includes a **Next.js frontend** and an **Express backend with MongoDB**.
 
-First, run the development server:
+**⚠️Note:** The styling in this project has been intentionally kept simple and minimal. The main focus is on demonstrating functionality rather than visual design. Styling can be improved and refined in future development stages.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧩 Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-  **Search for jobs**
+-  **View detailed job information**
+-  **Add/remove jobs to likes** (stored in `localStorage`)
+-  **Create a user profile** (name, desired position, about)
+-  **Personalized recommendations** on the `/jobs` page based on your profile
+-  **User registration and login** (email + password) via an Express backend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend (Next.js 14 + TypeScript)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js 14 (App Router)** 
+- **Tailwind CSS** 
+- **Formik + Yup**
+- **Axios + SWR**
+- **LocalStorage** 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Backend (Express)
 
-## Deploy on Vercel
+- **Express.js**
+- **MongoDB + Mongoose** 
+- **JWT + bcrypt** 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 How to Run the Project
+
+### 🔧 Start Backend (inside `auth-server` folder):
+
+1. Create a `.env` file with:
+
+    ```ini
+    MONGO_URI=your_mongo_connection_string
+    JWT_SECRET=your_secret
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm i
+    npm run dev
+    ```
+
+---
+
+### 🖥️ Start Frontend:
+1. Create a `.env` file with:
+
+    ```ini
+    NEXT_PUBLIC_RAPIDAPI_KEY==your_secret
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm i
+    npm run dev
+    ```
+
+---
+
+### Showcase :
+
+
+
+https://github.com/user-attachments/assets/b049b659-35df-419d-a12e-a0dbfc60d74b
+
